@@ -1,0 +1,382 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ONYX — Free RobRun Cheat: Aimbot, ESP, Radar | Download</title>
+<meta name="description" content="ONYX is a free RobRun cheat for Windows: aimbot with smoothing and prediction, player ESP, loot highlighting, 2D radar and world settings. No keys, no subscriptions. Download and press Insert in-game.">
+<meta name="keywords" content="RobRun cheat, RobRun hack, RobRun aimbot, RobRun ESP, free RobRun cheat, ONYX cheat, чит RobRun, читы на RobRun, бесплатный чит RobRun, аимбот RobRun, ESP RobRun, скачать чит RobRun, ONYX чит">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="theme-color" content="#12090a">
+<link rel="canonical" href="https://robrun.icu/">
+<link rel="alternate" hreflang="en" href="https://robrun.icu/">
+<link rel="alternate" hreflang="ru" href="https://robrun.icu/?lang=ru">
+<link rel="alternate" hreflang="x-default" href="https://robrun.icu/">
+
+<!-- Open Graph / social previews -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="ONYX">
+<meta property="og:title" content="ONYX — Free RobRun Cheat">
+<meta property="og:description" content="Aimbot, ESP, loot highlighting and a radar in one menu. Free, no keys or subscriptions.">
+<meta property="og:url" content="https://robrun.icu/">
+<meta property="og:image" content="https://robrun.icu/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="ru_RU">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="ONYX — Free RobRun Cheat">
+<meta name="twitter:description" content="Aimbot, ESP, loot highlighting and a radar in one menu. Free, no keys or subscriptions.">
+<meta name="twitter:image" content="https://robrun.icu/assets/og-image.png">
+
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "ONYX", "alternateName": ["ONYX RobRun", "ONYX чит RobRun"], "description": "Free cheat for RobRun with aimbot, ESP, loot highlighting, radar and world settings.", "applicationCategory": "GameApplication", "operatingSystem": "Windows 10, Windows 11", "inLanguage": ["en", "ru"], "url": "https://robrun.icu/", "image": "https://robrun.icu/assets/og-image.png", "downloadUrl": "https://robrun.icu/download/ONYX.zip", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Is ONYX really free?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. No keys, no subscriptions, no paid tiers. Every feature is available to everyone."}}, {"@type": "Question", "name": "What are the system requirements?", "acceptedAnswer": {"@type": "Answer", "text": "Windows 10 or 11, x64. No extra software needed, just run start.bat."}}, {"@type": "Question", "name": "What happens when the game updates?", "acceptedAnswer": {"@type": "Answer", "text": "We update ONYX shortly after every patch."}}]}</script>
+
+<!-- intro plays once per session -->
+<script>
+  try {
+    if (!matchMedia('(prefers-reduced-motion: reduce)').matches && !sessionStorage.getItem('onyx-intro')) {
+      document.documentElement.classList.add('has-intro');
+      sessionStorage.setItem('onyx-intro', '1');
+      setTimeout(() => document.documentElement.classList.add('intro-done'), 2600);
+    }
+  } catch (e) {}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preload" as="image" href="assets/menu-v2.webp" type="image/webp">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="intro" aria-hidden="true">
+  <svg viewBox="0 0 120 120">
+    <circle class="i-ring" cx="60" cy="60" r="34"/>
+    <path class="i-lines" d="M60 6v28M60 86v28M6 60h28M86 60h28"/>
+    <circle class="i-pip" cx="60" cy="60" r="3"/>
+  </svg>
+</div>
+<div class="progress" aria-hidden="true"></div>
+
+<header class="nav">
+  <div class="container nav-inner">
+    <a href="#top" class="brand" aria-label="ONYX">
+      <svg class="logo" viewBox="0 0 120 64" aria-hidden="true">
+        <path d="M4 36 C 22 14, 62 6, 116 4 C 92 12, 84 20, 80 30 C 70 52, 40 60, 16 52 C 30 50, 44 44, 50 34 C 34 32, 18 34, 4 36 Z" fill="#ededed"/>
+        <circle cx="64" cy="31" r="13" fill="none" stroke="#e3202d" stroke-width="4"/>
+        <circle cx="64" cy="31" r="4.5" fill="#e3202d"/>
+        <path d="M64 12v8M64 42v8M45 31h8M75 31h8" stroke="#e3202d" stroke-width="4" stroke-linecap="round"/>
+      </svg>
+      <span>ONYX</span>
+    </a>
+    <nav class="links">
+      <a href="#features" data-i18n="nav.features">Features</a>
+      <a href="#how" data-i18n="nav.how">How it works</a>
+      <a href="#faq" data-i18n="nav.faq">FAQ</a>
+    </nav>
+    <div class="nav-right">
+      <div class="lang" role="group" aria-label="Language">
+        <button type="button" data-lang="en" aria-pressed="true">EN</button>
+        <button type="button" data-lang="ru" aria-pressed="false">RU</button>
+      </div>
+      <a href="download/ONYX.zip" download class="btn btn-sm magnet" data-i18n="nav.download">Download</a>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- Hero -->
+  <div class="hero-wrap">
+    <div class="hero-bg" aria-hidden="true">
+      <div class="spot"></div>
+      <div class="range"><div class="grid"></div></div>
+      <canvas class="embers" id="embers"></canvas>
+    </div>
+
+    <section class="hero container">
+      <div class="hero-text">
+        <h1 data-i18n-html="hero.title"><span class="line"><span>ONYX for</span></span><span class="line"><span class="red">RobRun</span></span></h1>
+        <p class="lead enter" style="--d: 360ms" data-i18n="hero.lead">A free cheat for RobRun with aimbot, ESP, loot highlighting and a radar</p>
+        <div class="hero-cta enter" style="--d: 440ms">
+          <a href="download/ONYX.zip" download class="btn btn-lg magnet">
+            <svg viewBox="0 0 24 24" class="btn-ico" aria-hidden="true"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg>
+            <span data-i18n="cta.download">Download for free</span>
+          </a>
+          <a href="#how" class="btn btn-secondary btn-lg" data-i18n="nav.how">How it works</a>
+        </div>
+      </div>
+
+      <div class="showcase" id="showcase">
+        <div class="tilt" id="tilt">
+          <picture>
+            <source srcset="assets/menu-v2.webp" type="image/webp">
+            <img src="assets/menu-v2.png" alt="ONYX RobRun cheat menu: Combat tab with aimbot radius, smooth and predict settings" width="1372" height="764">
+          </picture>
+          <div class="glare" aria-hidden="true"></div>
+        </div>
+        <div class="reflection" aria-hidden="true"></div>
+        <svg class="reticle" id="reticle" viewBox="0 0 48 48" aria-hidden="true">
+          <circle cx="24" cy="24" r="12"/>
+          <path d="M24 4v10M24 34v10M4 24h10M34 24h10"/>
+          <circle class="pip" cx="24" cy="24" r="1.5"/>
+        </svg>
+      </div>
+    </section>
+  </div>
+
+  <!-- Features -->
+  <section id="features" class="section container">
+    <div class="section-head reveal">
+      <span class="label" data-i18n="features.label">Features</span>
+      <h2 data-i18n="features.title">Six tabs in one menu</h2>
+    </div>
+
+    <ul class="stats reveal">
+      <li><b data-count="6">6</b><span data-i18n="stats.tabs">tabs in the menu</span></li>
+      <li><b data-i18n="stats.free">Free</b><span data-i18n="stats.free2">no keys or subscriptions</span></li>
+      <li><b>EN · RU</b><span data-i18n="stats.lang">interface languages</span></li>
+    </ul>
+
+    <div class="cards">
+      <article class="card reveal" style="--i: 0">
+        <span class="idx">01</span>
+        <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="7"/><circle cx="12" cy="12" r="2"/><path d="M12 2v4M12 18v4M2 12h4M18 12h4"/></svg>
+        <h3>Combat</h3>
+        <p data-i18n="f.combat">Aimbot with radius, smoothing and prediction settings. Hitbox choice and target filters for knocked players, civilians and clan members.</p>
+        <i class="lock" aria-hidden="true"></i>
+      </article>
+      <article class="card reveal" style="--i: 1">
+        <span class="idx">02</span>
+        <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg>
+        <h3>Visuals</h3>
+        <p data-i18n="f.visuals">Player ESP with boxes, skeletons, names, distance and health</p>
+        <i class="lock" aria-hidden="true"></i>
+      </article>
+      <article class="card reveal" style="--i: 2">
+        <span class="idx">03</span>
+        <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l9 5v10l-9 5-9-5V7z"/><path d="M3 7l9 5 9-5M12 12v10"/></svg>
+        <h3>Loot</h3>
+        <p data-i18n="f.loot">Highlights loot and valuable items, filtered by type and distance</p>
+        <i class="lock" aria-hidden="true"></i>
+      </article>
+      <article class="card reveal" style="--i: 3">
+        <span class="idx">04</span>
+        <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><path d="M12 12l6-6"/></svg>
+        <h3>Radar</h3>
+        <p data-i18n="f.radar">A separate 2D radar with every player around you</p>
+        <i class="lock" aria-hidden="true"></i>
+      </article>
+      <article class="card reveal" style="--i: 4">
+        <span class="idx">05</span>
+        <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18"/></svg>
+        <h3>World</h3>
+        <p data-i18n="f.world">Lighting and time of day, plus grass and fog removal</p>
+        <i class="lock" aria-hidden="true"></i>
+      </article>
+      <article class="card reveal" style="--i: 5">
+        <span class="idx">06</span>
+        <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h10M18 6h2M4 12h4M12 12h8M4 18h12"/><circle cx="16" cy="6" r="2"/><circle cx="10" cy="12" r="2"/><circle cx="18" cy="18" r="2"/></svg>
+        <h3>Settings</h3>
+        <p data-i18n="f.settings">Configs, keybinds, interface language and a stream-proof mode that hides the menu from recordings</p>
+        <i class="lock" aria-hidden="true"></i>
+      </article>
+    </div>
+  </section>
+
+  <!-- How it works -->
+  <section id="how" class="section container">
+    <div class="section-head reveal">
+      <span class="label" data-i18n="how.label">How it works</span>
+      <h2 data-i18n="how.title">Three steps to start</h2>
+    </div>
+    <div class="steps-wrap reveal">
+      <div class="steps-line" aria-hidden="true"><span></span></div>
+      <ol class="steps">
+        <li style="--i: 0"><span class="dot" aria-hidden="true"></span><span class="num">01</span><h3 data-i18n="how.s1t">Run start.bat</h3><p data-i18n-html="how.s1">Download ONYX, unpack the archive and run <code>start.bat</code>. Wait until it finishes loading.</p></li>
+        <li style="--i: 1"><span class="dot" aria-hidden="true"></span><span class="num">02</span><h3 data-i18n="how.s2t">Join the game</h3><p data-i18n="how.s2">Launch RobRun and join a match as usual, ONYX is already running in the background</p></li>
+        <li style="--i: 2"><span class="dot" aria-hidden="true"></span><span class="num">03</span><h3 data-i18n="how.s3t">Press Insert</h3><p data-i18n-html="how.s3">Press <kbd>Insert</kbd> in-game to open the cheat menu. Press it again to hide it.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="section container narrow">
+    <div class="section-head reveal">
+      <span class="label">FAQ</span>
+      <h2 data-i18n="faq.title">Common questions</h2>
+    </div>
+    <div class="faq reveal">
+      <details><summary data-i18n="faq.q1">Is ONYX really free?</summary><div class="answer"><p data-i18n="faq.a1">Yes. No keys, no subscriptions, no paid tiers. Every feature is available to everyone.</p></div></details>
+      <details><summary data-i18n="faq.q2">What are the system requirements?</summary><div class="answer"><p data-i18n="faq.a2">Windows 10 or 11, x64. No extra software needed, just run start.bat.</p></div></details>
+      <details><summary data-i18n="faq.q3">What happens when the game updates?</summary><div class="answer"><p data-i18n="faq.a3">We update ONYX shortly after every patch</p></div></details>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <a href="#top" class="brand small">ONYX</a>
+    <span class="muted" data-i18n="footer.copy">© 2026 ONYX. Not affiliated with the RobRun developers.</span>
+  </div>
+</footer>
+
+<script src="i18n.js"></script>
+<script>
+  const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const fine = matchMedia('(pointer: fine)').matches;
+
+  // nav hairline once the page scrolls
+  const nav = document.querySelector('.nav');
+  addEventListener('scroll', () => nav.classList.toggle('scrolled', scrollY > 8), { passive: true });
+
+  // reveal on scroll + count-up for figures
+  const countUp = el => {
+    const to = +el.dataset.count, t0 = performance.now(), dur = 700;
+    const step = now => {
+      const p = Math.min(1, (now - t0) / dur), e = 1 - Math.pow(1 - p, 3);
+      el.textContent = Math.round(to * e);
+      if (p < 1) requestAnimationFrame(step);
+    };
+    requestAnimationFrame(step);
+  };
+  const io = new IntersectionObserver(entries => entries.forEach(e => {
+    if (!e.isIntersecting) return;
+    e.target.classList.add('in');
+    if (!reduce) e.target.querySelectorAll('[data-count]').forEach(countUp);
+    io.unobserve(e.target);
+  }), { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+  // card spotlight follows the cursor
+  document.querySelectorAll('.card').forEach(c => c.addEventListener('pointermove', e => {
+    const r = c.getBoundingClientRect();
+    c.style.setProperty('--mx', (e.clientX - r.left) + 'px');
+    c.style.setProperty('--my', (e.clientY - r.top) + 'px');
+  }));
+
+  // hero: 3D tilt + glare + a smoothed crosshair that follows the cursor
+  const show = document.getElementById('showcase');
+  const tilt = document.getElementById('tilt');
+  const reticle = document.getElementById('reticle');
+  const heroWrap = document.querySelector('.hero-wrap');
+  if (fine && !reduce) {
+    let raf = 0, tx = 0, ty = 0, cx = 0, cy = 0;          // tilt target / current (-1..1)
+    let ax = 0, ay = 0, rx = 0, ry = 0, inside = false;    // reticle target / current (px)
+    const loop = () => {
+      cx += (tx - cx) * 0.08; cy += (ty - cy) * 0.08;
+      rx += (ax - rx) * 0.16; ry += (ay - ry) * 0.16;      // the "Smooth" setting, literally
+      tilt.style.setProperty('--ry', (-12 + cx * 10).toFixed(2) + 'deg');
+      tilt.style.setProperty('--rx', (4 - cy * 8).toFixed(2) + 'deg');
+      tilt.style.setProperty('--gx', (50 + cx * 50).toFixed(1) + '%');
+      tilt.style.setProperty('--gy', (50 + cy * 50).toFixed(1) + '%');
+      heroWrap.style.setProperty('--sx', (cx * 40).toFixed(1) + 'px');
+      heroWrap.style.setProperty('--sy', (cy * 30).toFixed(1) + 'px');
+      reticle.style.transform = `translate3d(${rx - 24}px, ${ry - 24}px, 0)`;
+      const moving = Math.abs(tx - cx) + Math.abs(ty - cy) > 0.001 || Math.abs(ax - rx) + Math.abs(ay - ry) > 0.3;
+      raf = (moving || inside) ? requestAnimationFrame(loop) : 0;
+    };
+    const kick = () => { if (!raf) raf = requestAnimationFrame(loop); };
+    heroWrap.addEventListener('pointermove', e => {
+      const r = tilt.getBoundingClientRect();
+      tx = Math.max(-1, Math.min(1, (e.clientX - (r.left + r.width / 2)) / (r.width / 1.2)));
+      ty = Math.max(-1, Math.min(1, (e.clientY - (r.top + r.height / 2)) / (r.height / 1.2)));
+      const s = show.getBoundingClientRect();
+      ax = e.clientX - s.left; ay = e.clientY - s.top;
+      tilt.classList.add('active'); kick();
+    });
+    show.addEventListener('pointerenter', e => {
+      const s = show.getBoundingClientRect();
+      rx = ax = e.clientX - s.left; ry = ay = e.clientY - s.top;
+      inside = true; show.classList.add('aiming'); kick();
+    });
+    show.addEventListener('pointerleave', () => { inside = false; show.classList.remove('aiming'); });
+    heroWrap.addEventListener('pointerleave', () => { tx = 0; ty = 0; tilt.classList.remove('active'); kick(); });
+  }
+
+  // scroll progress
+  const bar = document.querySelector('.progress');
+  const onProg = () => {
+    const max = document.documentElement.scrollHeight - innerHeight;
+    bar.style.transform = `scaleX(${max > 0 ? scrollY / max : 0})`;
+  };
+  addEventListener('scroll', onProg, { passive: true }); onProg();
+
+  if (!reduce) {
+    // "RobRun" decodes out of random glyphs
+    const GLYPHS = 'ABCDEFGHJKLMNOPQRSTUVWXYZ0123456789#$%&@';
+    const decode = (el, delay) => {
+      const final = el.textContent; let frame = 0;
+      const total = final.length * 3 + 8;
+      setTimeout(() => {
+        const tick = () => {
+          frame++;
+          el.textContent = [...final].map((ch, i) =>
+            frame > i * 3 + 8 ? ch : GLYPHS[Math.floor(Math.random() * GLYPHS.length)]).join('');
+          if (frame < total) requestAnimationFrame(tick); else el.textContent = final;
+        };
+        tick();
+      }, delay);
+    };
+    const runDecode = first => {
+      const el = document.querySelector('h1 .red');
+      if (el) decode(el, first && document.documentElement.classList.contains('has-intro') ? 1100 : 250);
+    };
+
+    // section headings rise word by word
+    const splitWords = () => document.querySelectorAll('.section-head h2').forEach(h2 => {
+      const words = h2.textContent.trim().split(/\s+/);
+      h2.innerHTML = words.map((w, i) => `<span class="w"><span style="--w:${i}">${w}</span></span>`).join(' ');
+    });
+
+    splitWords(); runDecode(true);
+    window.onLangChange = () => { splitWords(); runDecode(false); };
+
+    // magnetic download buttons
+    if (fine) document.querySelectorAll('.magnet').forEach(b => {
+      b.addEventListener('pointermove', e => {
+        const r = b.getBoundingClientRect();
+        const dx = (e.clientX - r.left - r.width / 2) / r.width, dy = (e.clientY - r.top - r.height / 2) / r.height;
+        b.style.translate = `${(dx * 10).toFixed(1)}px ${(dy * 8).toFixed(1)}px`;
+      });
+      b.addEventListener('pointerleave', () => { b.style.translate = ''; });
+    });
+
+    // embers rising in the hero
+    const cv = document.getElementById('embers'), ctx = cv.getContext('2d');
+    let W = 0, H = 0, dpr = 1, parts = [], on = true;
+    const size = () => {
+      dpr = Math.min(2, devicePixelRatio || 1);
+      W = cv.clientWidth; H = cv.clientHeight;
+      cv.width = W * dpr; cv.height = H * dpr; ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    };
+    const spawn = (y) => ({
+      x: Math.random() * W, y: y ?? H + 10, r: .6 + Math.random() * 1.6,
+      vy: .2 + Math.random() * .5, vx: (Math.random() - .5) * .2, a: .2 + Math.random() * .6, t: Math.random() * 6.28
+    });
+    size(); parts = Array.from({ length: Math.round(W / 28) }, () => spawn(Math.random() * H));
+    addEventListener('resize', size);
+    const draw = () => {
+      if (!on) return;
+      ctx.clearRect(0, 0, W, H);
+      for (const p of parts) {
+        p.y -= p.vy; p.t += .02; p.x += p.vx + Math.sin(p.t) * .15;
+        if (p.y < -10) Object.assign(p, spawn());
+        const fade = Math.min(1, p.y / (H * .5));
+        ctx.globalAlpha = p.a * fade;
+        ctx.fillStyle = p.r > 1.6 ? '#ff6a4d' : '#e3202d';
+        ctx.beginPath(); ctx.arc(p.x, p.y, p.r, 0, 6.283); ctx.fill();
+      }
+      requestAnimationFrame(draw);
+    };
+    new IntersectionObserver(([e]) => { const was = on; on = e.isIntersecting; if (on && !was) draw(); }).observe(cv);
+    draw();
+  }
+</script>
+</body>
+</html>

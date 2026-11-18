@@ -1,0 +1,7 @@
+# Исходники, которые сайт не использует
+fb8b4800-cb5c-4dce-b879-2fa7e0c633ac.png
+assets/menu.png
+
+# Файл чита не храним в git — он загружается на сервер отдельно
+download/*
+!download/.gitkeep
