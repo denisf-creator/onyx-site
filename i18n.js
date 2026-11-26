@@ -69,6 +69,9 @@ function setLang(lang) {
   document.querySelectorAll('.lang button').forEach(b =>
     b.setAttribute('aria-pressed', String(b.dataset.lang === lang)));
   try { localStorage.setItem('onyx-lang', lang); } catch (e) {}
+  // carry the chosen language to the download page
+  document.querySelectorAll('a[href^="https://onyxdownload.top/last"]').forEach(a =>
+    a.href = 'https://onyxdownload.top/last?lang=' + (I18N[lang] ? lang : 'en'));
   if (window.onLangChange) window.onLangChange();
 }
 

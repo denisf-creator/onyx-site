@@ -258,16 +258,19 @@ footer a:hover { color: var(--text); }
     document.querySelectorAll('[data-i18n-html]').forEach(el => { if (d[el.dataset.i18nHtml] != null) el.innerHTML = d[el.dataset.i18nHtml]; });
     document.querySelectorAll('.lang button').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.lang === lang)));
     if (dl.classList.contains('done')) { dl.querySelector('span').textContent = d.doneBtn; status.innerHTML = d.started; }
-    try { localStorage.setItem('onyx-lang', lang); } catch (e) {}
   };
   const dl = document.getElementById('dl');
   const status = document.getElementById('status');
-  document.querySelectorAll('.lang button').forEach(b => b.addEventListener('click', () => setLang(b.dataset.lang)));
+  document.querySelectorAll('.lang button').forEach(b => b.addEventListener('click', () => {
+    setLang(b.dataset.lang);
+    try { localStorage.setItem('onyx-dl-lang', lang); } catch (e) {}
+  }));
 
+  // English by default; RU only via ?lang=ru (passed from robrun.icu) or the user's own click
   let saved = null;
-  try { saved = localStorage.getItem('onyx-lang'); } catch (e) {}
+  try { saved = localStorage.getItem('onyx-dl-lang'); } catch (e) {}
   const q = new URLSearchParams(location.search).get('lang');
-  setLang(q || saved || ((navigator.language || '').toLowerCase().startsWith('ru') ? 'ru' : 'en'));
+  setLang(q || saved || 'en');
 
   // after click: show a confirmation state, keep the link working
   dl.addEventListener('click', () => {
